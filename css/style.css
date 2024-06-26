@@ -30,23 +30,31 @@
 
 main {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .aside-container {
-    min-width: 225px;
-    min-height: 400px;
+    width: 215px;
+    min-height: 100%;
     background-color: var(--black-bg);
     font-size: 14px;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .main-container {
     min-height: calc(100vh - 100px);
-    width: calc(100vw - 225px);
+    width: calc(100vw - 215px);
     background-color: var(--blue-bg);
+    padding: 150px 40px;
 }
 
 .footer-container {
     height: 100px;
-    background-color: var(--grey-bg)
+    background-color: var(--grey-bg);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }

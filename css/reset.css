@@ -21,13 +21,14 @@ a {
     color: var(--grey-text)
 }
 
-a:hover {
+a:hover:not(.main-container) {
     color: var(--white-text);
 }
 
 ul li {
     list-style-type: none;
 }
+
 /*************************************************** 
     DEBUG
 ****************************************************/

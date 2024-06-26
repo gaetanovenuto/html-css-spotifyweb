@@ -2,16 +2,23 @@
 /*************************************************** 
     ASIDE SECTION
 ****************************************************/
-.logo,
+.logo {
+    width: 95%;
+    padding: 20px 15px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
 .nav-bar li,
 .playlist-section,
 .footer-aside-section {
     width: 95%;
-    padding: 10px 20px;
+    padding: 10px 15px;
 }
 
 .logo img {
-    width: 50%;
+    width: 75%;
 }
 /********************* 
     NAV-BAR SECTION
@@ -44,7 +51,7 @@
 .playlist-section {
     display: flex;
     flex-direction: column;
-    height: calc(100% - 310px);
+    height: 450px;
 }
 
 .playlist-section button {
@@ -66,7 +73,7 @@
 .playlist-section .playlist-list {
     padding: 15px 0;
     overflow-y: auto;
-    height: 80%;
+    height: 75%;
 }
 
 .playlist-section .playlist-list li a {
@@ -109,15 +116,17 @@
 
 .main-container .layover {
     width: 100%;
-    height: 115px;
+    height: 100px;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 0 20px;
+    padding: 0 225px;
+    
     position: fixed;
     top: 0;
     right: 0;
+    left: 215px;
 }
 
 .main-container .layover a {
@@ -132,8 +141,7 @@
 **********************/
 
 .main-container .main-nav-bar {
-    height: 10%;
-    padding: 150px 0;
+    height: 50px;
     display: flex;
     justify-content: center;
 }
@@ -146,21 +154,135 @@
 .main-container .main-nav-bar li a {
     text-transform: uppercase;
     padding: 0 10px;
+    font-weight: 100;
 }
 
-.main-container .main-nav-bar li a:before {
+.main-container .main-nav-bar li a:hover:before {
     content: "";
     position: absolute;
-    width: 40%;
+    width: 50%;
     height: 3px;
-    margin: -3px 0;
+    margin: -5px 0;
     bottom: 0;
     left: 25%;
     border-bottom: 2px solid var(--slime-border);
 }
 
+/********************* 
+    RECENTLY PLAYED SECTION
+**********************/
+
+.main-container .recently-played h2,
+.main-container .recently-played .song-title {
+    color: var(--white-text);
+}
+
+.main-container .recently-played .song-title,
+.main-container .recently-played .song-subtitle {
+    padding: 5px 0;
+}
+
+.main-container .recently-played h2 {
+    padding: 75px 0 ;
+    font-size: 30px;
+}
+
+.main-container .recently-played .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-container .recently-played .col {
+    width: calc((100% / 6) - 20px);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+/********************* 
+    CREATED FOR YOU SECTION
+**********************/
+
+.main-container .created-for-you h2,
+.main-container .created-for-you .song-title {
+    color: var(--white-text);
+}
+
+.main-container .created-for-you .song-title,
+.main-container .created-for-you .song-subtitle {
+    padding: 5px 0;
+}
+
+.main-container .created-for-you h2 {
+    font-size: 30px;
+    padding: 30px 0 10px;
+}
+
+.main-container .created-for-you h4 {
+    color: var(--grey-text);
+    padding: 10px 0 30px;
+    font-weight: 100;
+}
 
 
+
+.main-container .created-for-you .row {
+    display: flex;
+}
+
+.main-container .created-for-you .col {
+    width: calc((100% / 6) - 20px);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+/********************* 
+    POPULAR ARTISTS SECTION
+**********************/
+
+.main-container .popular-artists h2,
+.main-container .popular-artists .song-title {
+    color: var(--white-text);
+}
+
+.main-container .popular-artists .song-title,
+.main-container .popular-artists .song-subtitle {
+    padding: 5px 0;
+}
+
+.main-container .popular-artists h2 {
+    font-size: 30px;
+    padding: 30px 0 10px;
+}
+
+.main-container .popular-artists h4 {
+    color: var(--grey-text);
+    padding: 10px 0 30px;
+    font-weight: 100;
+}
+
+
+
+.main-container .popular-artists .row {
+    display: flex;
+}
+
+.main-container .popular-artists .col {
+    width: calc((100% / 6) - 20px);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+.main-container .popular-artists img {
+    border-radius: 50%;
+}
 
 
 
@@ -169,10 +291,7 @@
     FOOTER SECTION
 ****************************************************/
 
-.footer-container {
-    position: sticky;
-    bottom: 0;
-}
+
 
 
 
