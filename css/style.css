@@ -6,10 +6,47 @@
     BACKGROUND COLORS
 **********************/
 
+:root {
+    --black-bg: #000000;
+    --blue-bg: #141922;
+    --grey-bg: #282828;
+    --lightgrey-bg: #A3A3A3;
+}
+
 /********************* 
     TEXT
 **********************/
 
+:root {
+    --black-text: #000000;
+    --white-text: #FFFFFF;
+    --grey-text: #7D7F84;
+    --slime-border: #ADFF2F;
+}
+
 /********************* 
     CONTAINERS
 **********************/
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aside-container {
+    min-width: 225px;
+    min-height: 400px;
+    background-color: var(--black-bg);
+    font-size: 14px;
+}
+
+.main-container {
+    min-height: calc(100vh - 100px);
+    width: calc(100vw - 225px);
+    background-color: var(--blue-bg);
+}
+
+.footer-container {
+    height: 100px;
+    background-color: var(--grey-bg)
+}

@@ -1,6 +1,101 @@
+
 /*************************************************** 
-    HEADER SECTION
+    ASIDE SECTION
 ****************************************************/
+.logo,
+.nav-bar li,
+.playlist-section,
+.footer-aside-section {
+    width: 95%;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 50%;
+}
+/********************* 
+    NAV-BAR SECTION
+**********************/
+
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+}
+
+.nav-bar li a {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar li a span {
+    padding: 0px 4px;
+}
+
+.nav-bar img {
+    width: 26px;
+    height: 26px;
+}
+
+/********************* 
+    PLAYLIST SECTION
+**********************/
+
+.playlist-section {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 310px);
+}
+
+.playlist-section button {
+    padding: 6px 8px;
+    background-color: var(--lightgrey-bg);
+    font-size: 24px;
+}
+
+.playlist-section span {
+    color: var(--grey-text);
+    padding: 0px 4px;
+}
+
+.playlist-section .add-playlist {
+    display: flex;
+    align-items: center;
+}
+
+.playlist-section .playlist-list {
+    padding: 15px 0;
+    overflow-y: auto;
+    height: 80%;
+}
+
+.playlist-section .playlist-list li a {
+    line-height: 2.5rem;
+}
+
+/********************* 
+    FOOTER ASIDE SECTION
+**********************/
+
+.footer-aside-section .info-user {
+    color: var(--white-text);
+    font-size: 18px;
+}
+
+.footer-aside-section hr {
+    border-color: #7D7F84;
+}
+
+.footer-aside-section span {
+    padding: 0px 4px;
+}
+
+.footer-aside-section {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
 
 
@@ -8,13 +103,76 @@
     MAIN SECTION
 ****************************************************/
 
+/********************* 
+    LAYOVER SECTION
+**********************/
+
+.main-container .layover {
+    width: 100%;
+    height: 115px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.main-container .layover a {
+    text-transform: uppercase;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+/********************* 
+    MAIN NAV BAR SECTION
+**********************/
+
+.main-container .main-nav-bar {
+    height: 10%;
+    padding: 150px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container .main-nav-bar li {
+    display: inline-block;
+    position: relative;
+}
+
+.main-container .main-nav-bar li a {
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
+.main-container .main-nav-bar li a:before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 3px;
+    margin: -3px 0;
+    bottom: 0;
+    left: 25%;
+    border-bottom: 2px solid var(--slime-border);
+}
+
+
+
+
+
 
 
 /*************************************************** 
     FOOTER SECTION
 ****************************************************/
 
-
+.footer-container {
+    position: sticky;
+    bottom: 0;
+}
 
 
 
