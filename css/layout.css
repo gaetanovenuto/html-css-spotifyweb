@@ -51,7 +51,7 @@
 .playlist-section {
     display: flex;
     flex-direction: column;
-    height: 450px;
+    height: calc(100% - 50px);
 }
 
 .playlist-section button {
@@ -73,7 +73,7 @@
 .playlist-section .playlist-list {
     padding: 15px 0;
     overflow-y: auto;
-    height: 75%;
+    height: 80%;
 }
 
 .playlist-section .playlist-list li a {
@@ -291,9 +291,166 @@
     FOOTER SECTION
 ****************************************************/
 
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/********************* 
+    SONG-INFO SECTION
+**********************/
 
 
+.song-general {
+    width: 210px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    
+}
 
+.song-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.song-info-title,
+.song-info-singer {
+    padding-top: 3px;
+}
+
+.song-cover {
+    width: 80px;
+}
+
+.song-cover img {
+   max-width: 100%;
+   height: 100%;
+}
+
+.song-info .song-info-title {
+    font-size: 12px;
+    color: var(--white-text);
+}
+
+.song-info .song-info-singer {
+    font-size: 12px;
+    color: var(--grey-text);
+}
+
+.song-general button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0px 5px;
+    color: var(--grey-text);
+    font-weight: 100;
+    display: flex;
+    align-self: center;
+}
+
+.song-general button:hover {
+    color: var(--white-text);
+}
+
+/********************* 
+    INTERACTIVE BUTTONS SECTION
+**********************/
+
+.interactive-buttons-section {
+    width: 700px;
+}
+
+.interactive-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.interactive-buttons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.interactive-buttons button:hover {
+    color: var(--grey-text);
+}
+
+.interactive-buttons .footer-button {
+    font-size: 20px;
+    color: var(--white-text);
+    padding: 20px 15px;
+}
+
+.interactive-buttons .play-button {
+    font-size: 30px;
+}
+
+.time-bar {
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+}
+
+.time-bar-hr {
+    position: relative;
+    width: 100%;
+}
+
+.time-bar .grey-hr {
+    width: 100%;
+    height: 1px;
+    border: 2px solid var(--grey-text);
+    border-radius: 2px;
+    margin-top: 5px;
+}
+
+.time-bar .white-hr {
+    width: 25%;
+    height: 1px;
+    border: 2px solid var(--white-text);
+    border-radius: 2px;
+    margin-top: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.time-circle {
+    position: absolute;
+    left: 25%;
+    top: 0;
+    height: 10px;
+    width: 10px;
+    background-color: var(--white-text);
+    border-radius: 50%;
+    transform: translate(-50%, 25%);
+    display: none;
+}
+
+.time-bar-hr .white-hr:hover .time-circle {
+    display: block;
+}
+
+
+.time-bar span {
+    color: var(--white-text);
+    font-size: 12px;
+    padding: 0 20px;
+}
+
+/********************* 
+    SONG INTERACTIONS SECTION
+**********************/
+
+.song-interactions {
+    width: 210px;
+    background-color: yellow;
+    min-height: 100px;
+}
 
 
 
