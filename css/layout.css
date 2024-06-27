@@ -58,7 +58,7 @@
 .playlist-section {
     display: flex;
     flex-direction: column;
-    height: calc(100% - 50px);
+    height: calc(100% - 350px);
 }
 
 .playlist-section button {
@@ -86,7 +86,7 @@
 .playlist-section .playlist-list {
     padding: 15px 0;
     overflow-y: auto;
-    height: 80%;
+    min-height: 150px;
 }
 
 .playlist-section .playlist-list li a {
