@@ -28,6 +28,10 @@
     CONTAINERS
 **********************/
 
+body {
+    min-height: 500px;
+}
+
 main {
     display: flex;
     justify-content: flex-end;
@@ -35,12 +39,15 @@ main {
 
 .aside-container {
     width: 215px;
-    min-height: 100%;
     background-color: var(--black-bg);
     font-size: 14px;
     position: fixed;
     top: 0;
     left: 0;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .main-container {
@@ -57,5 +64,6 @@ main {
     position: fixed;
     bottom: 0;
     left: 0;
+    display: flex;
 }
 

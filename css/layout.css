@@ -20,6 +20,13 @@
 .logo img {
     width: 75%;
 }
+
+.logo-small {
+    width: 100%;
+    padding: 20px 15px;
+    display: none;
+}
+
 /********************* 
     NAV-BAR SECTION
 **********************/
@@ -111,7 +118,7 @@
     height: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 
@@ -136,6 +143,7 @@
     top: 0;
     right: 0;
     left: 200px;
+    z-index: 1;
 }
 
 .main-container .layover a {
@@ -238,6 +246,7 @@
 .main-container .recently-played .row {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .main-container .recently-played .col {
@@ -551,6 +560,10 @@
     display: block;
 }
 
+.song-interaction .footer-button {
+    padding: 0px 5px;
+}
+
 
 
 
@@ -561,19 +574,25 @@
 ****************************************************/
 
 /********************* 
-    LG (>992px)
+    LG (<992px)
 **********************/
 
 @media screen and (max-width: 992px) {
-
-    .row {
+    .main-container .recently-played .row {
         flex-wrap: wrap;
+        justify-content: flex-start;
     }
-    
-    .main-container a {
-        width: calc((50px / 4) - 20px);
+
+    .main-container .recently-played .col,
+    .main-container .created-for-you .col,
+    .main-container .popular-artists .col {
+        width: calc((100% / 4) - 20px);
         margin-right: 20px;
         margin-bottom: 20px;
+    }
+
+    .main-container .main-nav-bar ul li {
+        padding: 5px;
     }
 }
 
@@ -584,7 +603,14 @@
     MD (>768px)
 **********************/
 @media screen and (max-width: 768px) {
-    
+
+    .main-container .recently-played .col,
+    .main-container .created-for-you .col,
+    .main-container .popular-artists .col {
+        width: calc((100% / 2) - 20px);
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -594,5 +620,37 @@
 **********************/
 
 @media screen and (max-width: 576px) {
-    
+    main .aside-container {
+        width: 10%;
+    }
+
+    main .aside-container .logo-small {
+        display: block;
+    }
+
+    .footer-aside-section,
+    .footer-aside-section .info-user {
+        font-size: 20px;
+    }
+
+    main .aside-container span,
+    main .aside-container .logo,
+    main .aside-container .playlist-section,
+    main .aside-container .footer-aside-section span {
+        display: none;
+    }
+
+    main .main-container {
+        width: calc(100% - 10%);
+    }
+
+    .main-container .layover {
+        left: 0;
+        right: 0;
+    }
+
+    .main-container .layover a {
+        position: fixed;
+        right: 15px;
+    }
 }
