@@ -409,6 +409,11 @@
     color: var(--white-text);
 }
 
+.song-general .footer-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
 /********************* 
     INTERACTIVE BUTTONS SECTION
 **********************/
@@ -569,6 +574,7 @@
 
 
 
+
 /*************************************************** 
     RESPONSIVE
 ****************************************************/
@@ -653,4 +659,13 @@
         position: fixed;
         right: 15px;
     }
+
+    .footer-container .song-general .footer-buttons {
+        flex-wrap: wrap;
+        height: 75%;
+        padding-top: 20px;
+    }
+
+
 }
+
